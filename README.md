@@ -9,7 +9,7 @@ Das Design basiert auf einer Pinterest-Collage (siehe Quelle: https://de.pintere
 ## Was kann die App?
 
 - Alben in einer **Queue** sammeln
-- Apple-Music-Albumlinks einfügen und Albumdaten importieren
+- Apple-Music-Albumlinks (alternativ auch Spotify- oder iTunes-Albumlink) einfügen und Albumdaten importieren
 - Alben aus der Queue in einzelne **Album Cards** übertragen
 - pro Album eigene Tracks, Standout Tracks, Mood, Ratings und Notizen speichern
 - Standout Tracks nach Mood in Playlists sammeln
