@@ -4,7 +4,7 @@ Ein persönlicher, mobiler Album-Tracker für Musik-Alben, Queue, Album Cards, S
 
 Die App ist eine einzelne statische HTML-Datei (`index.html`). Sie funktioniert ohne Login, ohne Server und ohne Datenbank.
 
-Das Design basiert auf einer Pinterest-Collage (siehe Quelle: https://de.pinterest.com/pin/3729612228359468/)
+Das Design basiert auf einer Pinterest-Collage (siehe Quelle: https://de.pinterest.com/pin/3729612228359468/).
 
 ## Was kann die App?
 
