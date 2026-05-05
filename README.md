@@ -1,28 +1,46 @@
 # Album Diary – Mobile Album Tracker
 
-Ein persönlicher, mobiler Album-Tracker für Musik-Alben, Queue, Album Cards, Standout Tracks, Mood-Playlists und Top-30-Songs.
+**Album Diary** ist ein persönlicher, mobiler Album-Tracker für Musik-Alben, Listening Queue, Album Cards, Standout Tracks, Mood-Playlists und Top-30-Songs.
 
-Die App ist eine einzelne statische HTML-Datei (`index.html`). Sie funktioniert ohne Login, ohne Server und ohne Datenbank.
+Die App besteht aus einer einzigen statischen HTML-Datei: `index.html`.  
+Sie funktioniert ohne Login, ohne Server und ohne Datenbank.
 
-Das Design basiert auf einer Pinterest-Collage (siehe Quelle: https://de.pinterest.com/pin/3729612228359468/).
+Das Design ist von einer Pinterest-Collage inspiriert:  
+https://de.pinterest.com/pin/3729612228359468/
 
-## Was kann die App?
+## Funktionen
 
-- Alben in einer **Queue** sammeln
-- Apple-Music-Albumlinks (alternativ auch Spotify- oder iTunes-Albumlink) einfügen und Albumdaten importieren
+- Alben in einer **Listening Queue** sammeln
+- Apple-Music-Albumlinks einfügen und Albumdaten importieren
+- alternativ Spotify- oder iTunes-Albumlinks nutzen, soweit der Import verfügbar ist
 - Alben aus der Queue in einzelne **Album Cards** übertragen
-- pro Album eigene Tracks, Standout Tracks, Mood, Ratings und Notizen speichern
-- Standout Tracks nach Mood in Playlists sammeln
+- pro Album eigene Daten speichern:
+  - Cover
+  - Artist
+  - Jahr
+  - Album-Mood
+  - Like / Dislike
+  - Review-Notizen
+  - Tracks
+  - Standout Tracks
+- Standout Tracks einzeln bewerten nach:
+  - Melody
+  - Lyrics
+  - Replay
+- mehrere Moods pro Standout Track vergeben
+- automatisch Mood-Playlists aus Standout Tracks erstellen
 - eine allgemeine **Top 30 Songs** Playlist führen
-- Songs schnell in Apple Music oder Spotify öffnen
+- Playlists ein- und ausklappen
+- Playlist-Listen kopieren
+- Standout-Ranking kopieren
 - Daten lokal im Browser speichern
 - Backup kopieren, herunterladen und wieder importieren
 
-## Wichtig: Werden meine Daten mit anderen geteilt?
+## Datenschutz: Werden meine Daten mit anderen geteilt?
 
 Nein.
 
-Der veröffentlichte Code enthält nur die Grund-App. Persönliche Daten wie Queue, Ratings, Notes oder Album Cards werden lokal im Browser der jeweiligen Person gespeichert.
+Der veröffentlichte Code enthält nur die Grund-App. Persönliche Daten wie Queue, Ratings, Notes, Album Cards oder Playlists werden lokal im Browser der jeweiligen Person gespeichert.
 
 Das bedeutet:
 
@@ -35,7 +53,7 @@ Bitte lade keine persönlichen Backup-Dateien in ein öffentliches Repository ho
 
 ## Option 1: Die App direkt nutzen
 
-Wenn du nur die App nutzen möchtest, öffne den veröffentlichten Link der App im Browser.
+Wenn du nur die App nutzen möchtest, öffne den veröffentlichten App-Link im Browser.
 
 Auf dem iPhone:
 
@@ -116,19 +134,41 @@ Im Dashboard gibt es einen Backup-Bereich.
 
 Empfohlen:
 
-- regelmäßig **Backup kopieren** nutzen und den Text in Notizen speichern
+- regelmäßig **Backup kopieren** nutzen und den Text sicher speichern
 - oder **Backup-Datei** herunterladen
 - Backup niemals öffentlich ins Repository hochladen
 
 ## Backup wiederherstellen
 
+Im Dashboard gibt es zwei Wege:
+
+### Backup-Datei importieren
+
 1. Öffne die App.
 2. Gehe zum Dashboard.
-3. Wähle **Backup einfügen / importieren**.
-4. Füge den vollständigen Backup-Text ein.
+3. Wähle deine Backup-Datei aus.
+4. Tippe auf **Ausgewählte Backup-Datei importieren**.
+5. Bestätige den Import.
+
+### Backup-Text importieren
+
+1. Öffne die App.
+2. Gehe zum Dashboard.
+3. Füge den vollständigen Backup-Text in das Backup-Textfeld ein.
+4. Tippe auf **Text-Backup importieren**.
 5. Bestätige den Import.
 
 Achtung: Beim Import werden die aktuellen lokalen Daten durch das Backup ersetzt.
+
+## Playlists
+
+Die App erstellt Playlists lokal innerhalb der App:
+
+- **Top 30 Songs**
+- Mood-Playlists auf Basis der Standout-Track-Moods
+
+Die Playlists werden nicht automatisch in Apple Music oder Spotify erstellt.  
+Du kannst die Listen aber kopieren und weiterverwenden.
 
 ## Für Entwicklerinnen und Entwickler
 
@@ -161,12 +201,20 @@ Du kannst in deiner eigenen Kopie zum Beispiel ändern:
 - Farben
 - Schriftgrößen
 - Texte
-- Anzahl der Queue-Slots
+- Anzahl oder Struktur der Queue-Slots
 - Design-Details
 - Felder und Kategorien
+- Playlist-Logik
 
 Bitte mache solche Änderungen in deinem eigenen Fork oder eigenen Repository, nicht im Original.
 
-## Lizenz / Nutzung
+## Nutzung
 
-Du darfst den Grundcode für deine eigene Album-Sammlung nutzen und anpassen. Wenn du die App öffentlich teilst, achte darauf, keine persönlichen Daten oder Backups mitzuveröffentlichen.
+Du darfst den Grundcode für deine eigene Album-Sammlung nutzen und anpassen.
+
+Wenn du die App öffentlich teilst, achte darauf:
+
+- keine persönlichen Daten mitzuveröffentlichen
+- keine Backup-Dateien hochzuladen
+- keine ausgefüllte private Version als `index.html` zu committen
+
